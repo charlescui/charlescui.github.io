@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://charlescui.github.io
+title: "非宁静无以睡眠啊"
+subtitle: "我喜欢这么玩，那么玩，就是没有你好玩"
+author: CuiZzz...
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: cuizheng.hz@qq.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
