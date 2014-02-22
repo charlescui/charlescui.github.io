@@ -4,7 +4,7 @@
   <title><![CDATA[非宁静无以睡眠啊]]></title>
   <link href="http://charlescui.github.io/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
-  <updated>2014-02-21T22:55:31+08:00</updated>
+  <updated>2014-02-23T03:03:39+08:00</updated>
   <id>http://charlescui.github.io/</id>
   <author>
     <name><![CDATA[CuiZzz...]]></name>
@@ -14,11 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Piano]]></title>
-    <link href="http://charlescui.github.io/blog/2014/02/21/piano/"/>
-    <updated>2014-02-21T22:48:58+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/02/21/piano</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[室内模型设计初笔]]></title>
+    <link href="http://charlescui.github.io/blog/2014/02/23/design/"/>
+    <updated>2014-02-23T02:43:46+08:00</updated>
+    <id>http://charlescui.github.io/blog/2014/02/23/design</id>
+    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/xxwz.png" title="大平层" alt="鸟瞰图" /></p>
+
+<p>城区内现在的房子偏爱豪装+大平层，200-300平方左右的平层，配上单价6000RMB上下的精装修，便可挽回部分向往郊区排屋、独栋的业主的心。</p>
+
+<p>不过，据我媳妇说，还是有大楼梯上下层打通的房子才更气派，那种站在楼梯下，婚纱的裙摆霸气的铺开，那种感觉是平层的心永远无法理解的。</p>
+
+<p>话说回来，最近有部电影很火：<a href="www.letv.com/ptv/vplay/2234163.html">&lt;&lt;来自星星的你>></a>，里面男女主人公的大豪宅掀起了不少少妇的豪宅梦。</p>
+
+<iframe src="http://www.lao3d.com/model_link.html?modelid=9992" allowfullscreen="true" width="600" height="450"></iframe>
+
 ]]></content>
   </entry>
   
