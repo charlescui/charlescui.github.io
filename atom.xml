@@ -4,7 +4,7 @@
   <title><![CDATA[非宁静无以睡眠啊]]></title>
   <link href="http://charlescui.github.io/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
-  <updated>2014-02-23T20:18:47+08:00</updated>
+  <updated>2014-02-23T20:31:22+08:00</updated>
   <id>http://charlescui.github.io/</id>
   <author>
     <name><![CDATA[CuiZzz...]]></name>
@@ -20,14 +20,14 @@
     <id>http://charlescui.github.io/blog/2014/02/23/house</id>
     <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/bigbang.png" title="花园洋房" alt="鸟瞰图" /></p>
 
-<p>看过《绿野仙踪》的孩子有着森林的梦，有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，我想要这样的大房子。</p>
+<p>看过《绿野仙踪》的孩子有着森林的梦，那里有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，任我发挥，我想造这样的大房子，这是我的中国梦。</p>
 
 <!--more-->
 
 
-<p><code>捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层</code></p>
+<h3>楼层介绍</h3>
 
-<h2>楼层介绍</h2>
+<h5>一楼</h5>
 
 <p><img src="http://charlescui.github.io/images/posts/bigbang_1f.png" title="一楼俯视图" alt="一楼" /></p>
 
@@ -36,6 +36,8 @@
 </ul>
 
 
+<h5>二楼</h5>
+
 <p><img src="http://charlescui.github.io/images/posts/bigbang_2f.png" title="二楼俯视图" alt="二楼" /></p>
 
 <ul>
@@ -43,12 +45,16 @@
 </ul>
 
 
+<h5>三楼</h5>
+
 <p><img src="http://charlescui.github.io/images/posts/bigbang_3f.png" title="三楼俯视图" alt="三楼" /></p>
 
 <ul>
 <li>三楼一个宽敞的大露台，可以乘凉，可以眺望远方，和一楼的大露台交相辉映，看着就心里宽敞。</li>
 </ul>
 
+
+<p><code>捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层</code></p>
 
 <iframe src="http://www.lao3d.com/model_link.html?modelid=9997" allowfullscreen="true" width="600" height="450"></iframe>
 
