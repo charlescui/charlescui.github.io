@@ -4,7 +4,7 @@
   <title><![CDATA[非宁静无以睡眠啊]]></title>
   <link href="http://charlescui.github.io/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
-  <updated>2014-02-23T03:03:39+08:00</updated>
+  <updated>2014-02-23T16:00:26+08:00</updated>
   <id>http://charlescui.github.io/</id>
   <author>
     <name><![CDATA[CuiZzz...]]></name>
@@ -14,6 +14,25 @@
 
   
   <entry>
+    <title type="html"><![CDATA[三分地的花园洋房]]></title>
+    <link href="http://charlescui.github.io/blog/2014/02/23/house/"/>
+    <updated>2014-02-23T13:52:11+08:00</updated>
+    <id>http://charlescui.github.io/blog/2014/02/23/house</id>
+    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/bigbang.png" title="花园洋房" alt="鸟瞰图" /></p>
+
+<p>看过《绿野仙踪》的孩子有着森林的梦，有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，我想要这样的大房子。</p>
+
+<!--more-->
+
+
+<p><code>捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层</code></p>
+
+<iframe src="http://www.lao3d.com/model_link.html?modelid=9997" allowfullscreen="true" width="600" height="450"></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[室内模型设计初笔]]></title>
     <link href="http://charlescui.github.io/blog/2014/02/23/design/"/>
     <updated>2014-02-23T02:43:46+08:00</updated>
@@ -21,6 +40,9 @@
     <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/xxwz.png" title="大平层" alt="鸟瞰图" /></p>
 
 <p>城区内现在的房子偏爱豪装+大平层，200-300平方左右的平层，配上单价6000RMB上下的精装修，便可挽回部分向往郊区排屋、独栋的业主的心。</p>
+
+<!--more-->
+
 
 <p>不过，据我媳妇说，还是有大楼梯上下层打通的房子才更气派，那种站在楼梯下，婚纱的裙摆霸气的铺开，那种感觉是平层的心永远无法理解的。</p>
 
