@@ -1,24 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[非宁静无以睡眠啊]]></title>
-  <link href="http://charlescui.github.io/atom.xml" rel="self"/>
-  <link href="http://charlescui.github.io/"/>
-  <updated>2014-05-01T10:09:31+08:00</updated>
-  <id>http://charlescui.github.io/</id>
-  <author>
-    <name><![CDATA[CuiZzz...]]></name>
-    <email><![CDATA[cuizheng.hz@qq.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Deploy HLS(m3u8) Server with FFMPEG - 非宁静无以睡眠啊</title>
+  <meta name="author" content="CuiZzz...">
 
   
-  <entry>
-    <title type="html"><![CDATA[Deploy HLS(m3u8) Server with FFMPEG]]></title>
-    <link href="http://charlescui.github.io/blog/2014/05/01/deploy-hls-m3u8-server-with-ffmpeg/"/>
-    <updated>2014-05-01T08:53:59+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/05/01/deploy-hls-m3u8-server-with-ffmpeg</id>
-    <content type="html"><![CDATA[<p>这是一次搭建<code>直播</code>HLS服务器的经历，通过以下介绍，可以完成一套完整的直播HLS服务的部署。</p>
+  <meta name="description" content="这是一次搭建直播HLS服务器的经历，通过以下介绍，可以完成一套完整的直播HLS服务的部署。 安装ffmpeg 下载最新代码 : git clone https://github.com/FFmpeg/FFmpeg.git 安装以下依赖的库: sudo apt-get install libass- &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://charlescui.github.io/blog/2014/05/01/deploy-hls-m3u8-server-with-ffmpeg">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="非宁静无以睡眠啊" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ae7f21e3ff60baae88a23fcda30e6a14";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<aside class="left">
+			<div class="inner-left">
+				<header>
+					<img src="http://www.gravatar.com/avatar/e36902a6e9f32ad5f5c09ff0dd4eb97b?s=200" alt="Gravatar of CuiZzz... " title="Gravatar of CuiZzz..." class="profilepic" />
+<hgroup>
+  <h1><a href="/">非宁静无以睡眠啊</a></h1>
+  
+    <h2 class="subtitle">我喜欢这么玩，那么玩，就是没有你好玩</h2>
+   
+</hgroup>
+
+
+				</header>
+				<footer>
+					<p>
+	
+		<a href="http://github.com/charlescui.github.io" class="btn btn-dark">GitHub</a>
+	
+	
+</p>
+				</footer>
+			</div>
+		</aside>
+    	<section class="right">
+    		<div class="inner-right">
+    			<div id="posts">
+    			  	<article class="post">
+    
+  <header>
+    
+      <h1 class="entry-title">Deploy HLS(m3u8) Server With FFMPEG</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-01T08:53:59+08:00" pubdate data-updated="true">May 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>这是一次搭建<code>直播</code>HLS服务器的经历，通过以下介绍，可以完成一套完整的直播HLS服务的部署。</p>
 
 <h2 id="ffmpeg">安装ffmpeg</h2>
 
@@ -250,67 +327,54 @@ video/MP2T                              ts;
 
 <h3 id="section-4">测试结果</h3>
 
-<p><img src="http://charlescui.github.io/images/posts/vlcsnap-2014-05-01-09h56m04s143.png" alt="直播截图" title="湖南卫视" /></p>
-]]></content>
-  </entry>
+<p><img src="/images/posts/vlcsnap-2014-05-01-09h56m04s143.png" alt="直播截图" title="湖南卫视" /></p>
+</div>
+
+
+</article>
+
+
+        <div class="sharing">
   
-  <entry>
-    <title type="html"><![CDATA[三分地的花园洋房]]></title>
-    <link href="http://charlescui.github.io/blog/2014/02/23/house/"/>
-    <updated>2014-02-23T13:52:11+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/02/23/house</id>
-    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/bigbang.png" alt="鸟瞰图" title="花园洋房" /></p>
-
-<p>看过《绿野仙踪》的孩子有着森林的梦，那里有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，任我发挥，我想造这样的大房子，这是我的中国梦。
-<!--more--></p>
-
-<h3 id="section">楼层介绍</h3>
-
-<h5 id="section-1">一楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_1f.png" alt="一楼" title="一楼俯视图" /></p>
-
-<ul>
-  <li>客厅宽敞，朝南两扇大窗户。一个卧室给不方便上下楼的长辈居住。</li>
-</ul>
-
-<h5 id="section-2">二楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_2f.png" alt="二楼" title="二楼俯视图" /></p>
-
-<ul>
-  <li>书房有三扇窗户，宽敞通透。但卫生间设计的不好，只有一个卧室有，其他卧室要上卫生间就麻烦了。</li>
-</ul>
-
-<h5 id="section-3">三楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_3f.png" alt="三楼" title="三楼俯视图" /></p>
-
-<ul>
-  <li>三楼一个宽敞的大露台，可以乘凉，可以眺望远方，和一楼的大露台交相辉映，看着就心里宽敞。</li>
-</ul>
-
-<p><code>捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层</code></p>
-
-<iframe src="http://www.lao3d.com/model_link.html?modelid=9997" allowfullscreen="true" width="600" height="450"></iframe>
-]]></content>
-  </entry>
   
-  <entry>
-    <title type="html"><![CDATA[室内模型设计初笔]]></title>
-    <link href="http://charlescui.github.io/blog/2014/02/23/design/"/>
-    <updated>2014-02-23T02:43:46+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/02/23/design</id>
-    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/xxwz.png" alt="鸟瞰图" title="大平层" /></p>
-
-<p>城区内现在的房子偏爱豪装+大平层，200-300平方左右的平层，配上单价6000RMB上下的精装修，便可挽回部分向往郊区排屋、独栋的业主的心。
-<!--more-->
-不过，据我媳妇说，还是有大楼梯上下层打通的房子才更气派，那种站在楼梯下，婚纱的裙摆霸气的铺开，那种感觉是平层的心永远无法理解的。</p>
-
-<p>话说回来，最近有部电影很火：<a href="www.letv.com/ptv/vplay/2234163.html">«来自星星的你»</a>，里面男女主人公的大豪宅掀起了不少少妇的豪宅梦。</p>
-
-<iframe src="http://www.lao3d.com/model_link.html?modelid=9992" allowfullscreen="true" width="600" height="450"></iframe>
-]]></content>
-  </entry>
   
-</feed>
+    
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1380332723283758&move=0&amp;btn=r2.gif" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+    
+</div>
+
+
+
+
+    			</div>
+    			<footer id="footer">
+    				<p class="credit">
+  Copyright &copy; 2014 - CuiZzz.... Powered by <a href="http://octopress.org">Octopress</a>
+</p>
+
+
+    			</footer>
+    			
+
+
+
+
+
+
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+
+
+
+
+    		</div>
+    	</section>
+  	</div>
+</body>
+</html>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[非宁静无以睡眠啊]]></title>
-  <link href="http://charlescui.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 视频 | 非宁静无以睡眠啊]]></title>
+  <link href="http://charlescui.github.io/blog/categories/shi-pin/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
   <updated>2014-05-01T10:09:31+08:00</updated>
   <id>http://charlescui.github.io/</id>
@@ -250,66 +250,7 @@ video/MP2T                              ts;
 
 <h3 id="section-4">测试结果</h3>
 
-<p><img src="http://charlescui.github.io/images/posts/vlcsnap-2014-05-01-09h56m04s143.png" alt="直播截图" title="湖南卫视" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[三分地的花园洋房]]></title>
-    <link href="http://charlescui.github.io/blog/2014/02/23/house/"/>
-    <updated>2014-02-23T13:52:11+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/02/23/house</id>
-    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/bigbang.png" alt="鸟瞰图" title="花园洋房" /></p>
-
-<p>看过《绿野仙踪》的孩子有着森林的梦，那里有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，任我发挥，我想造这样的大房子，这是我的中国梦。
-<!--more--></p>
-
-<h3 id="section">楼层介绍</h3>
-
-<h5 id="section-1">一楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_1f.png" alt="一楼" title="一楼俯视图" /></p>
-
-<ul>
-  <li>客厅宽敞，朝南两扇大窗户。一个卧室给不方便上下楼的长辈居住。</li>
-</ul>
-
-<h5 id="section-2">二楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_2f.png" alt="二楼" title="二楼俯视图" /></p>
-
-<ul>
-  <li>书房有三扇窗户，宽敞通透。但卫生间设计的不好，只有一个卧室有，其他卧室要上卫生间就麻烦了。</li>
-</ul>
-
-<h5 id="section-3">三楼</h5>
-
-<p><img src="http://charlescui.github.io/images/posts/bigbang_3f.png" alt="三楼" title="三楼俯视图" /></p>
-
-<ul>
-  <li>三楼一个宽敞的大露台，可以乘凉，可以眺望远方，和一楼的大露台交相辉映，看着就心里宽敞。</li>
-</ul>
-
-<p><code>捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层</code></p>
-
-<iframe src="http://www.lao3d.com/model_link.html?modelid=9997" allowfullscreen="true" width="600" height="450"></iframe>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[室内模型设计初笔]]></title>
-    <link href="http://charlescui.github.io/blog/2014/02/23/design/"/>
-    <updated>2014-02-23T02:43:46+08:00</updated>
-    <id>http://charlescui.github.io/blog/2014/02/23/design</id>
-    <content type="html"><![CDATA[<p><img src="http://charlescui.github.io/images/posts/xxwz.png" alt="鸟瞰图" title="大平层" /></p>
-
-<p>城区内现在的房子偏爱豪装+大平层，200-300平方左右的平层，配上单价6000RMB上下的精装修，便可挽回部分向往郊区排屋、独栋的业主的心。
-<!--more-->
-不过，据我媳妇说，还是有大楼梯上下层打通的房子才更气派，那种站在楼梯下，婚纱的裙摆霸气的铺开，那种感觉是平层的心永远无法理解的。</p>
-
-<p>话说回来，最近有部电影很火：<a href="www.letv.com/ptv/vplay/2234163.html">«来自星星的你»</a>，里面男女主人公的大豪宅掀起了不少少妇的豪宅梦。</p>
-
-<iframe src="http://www.lao3d.com/model_link.html?modelid=9992" allowfullscreen="true" width="600" height="450"></iframe>
+<p><img src="/images/posts/vlcsnap-2014-05-01-09h56m04s143.png" alt="直播截图" title="湖南卫视" /></p>
 ]]></content>
   </entry>
   
