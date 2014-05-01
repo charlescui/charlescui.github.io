@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>代码分支管理及发布流程 Code Branch Manage and Publish Work Flow - 非宁静无以睡眠啊</title>
+  <meta name="author" content="CuiZzz...">
+
+  
+  <meta name="description" content="代码分支 之前在阿里，公司内部采用SVN作为代码管理工具。自从创业后，我一直在使用GIT作为代码管理工具。 项目常驻分支: master pre devel local 分支状态: 冻结状态：不允许代码提交 活跃状态：允许代码提交 master git仓库新建，通过git &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://charlescui.github.io/blog/2014/05/01/code-branch-manage-and-publish-work-flow">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="非宁静无以睡眠啊" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ae7f21e3ff60baae88a23fcda30e6a14";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<aside class="left">
+			<div class="inner-left">
+				<header>
+					<img src="http://www.gravatar.com/avatar/e36902a6e9f32ad5f5c09ff0dd4eb97b?s=200" alt="Gravatar of CuiZzz... " title="Gravatar of CuiZzz..." class="profilepic" />
+<hgroup>
+  <h1><a href="/">非宁静无以睡眠啊</a></h1>
+  
+    <h2 class="subtitle">我喜欢这么玩，那么玩，就是没有你好玩</h2>
+   
+</hgroup>
+
+
+				</header>
+				<footer>
+					<p>
+	
+		<a href="http://github.com/charlescui.github.io" class="btn btn-dark">GitHub</a>
+	
+	
+</p>
+				</footer>
+			</div>
+		</aside>
+    	<section class="right">
+    		<div class="inner-right">
+    			<div id="posts">
+    			  	<article class="post">
+    
+  <header>
+    
+      <h1 class="entry-title">代码分支管理及发布流程 Code Branch Manage and Publish Work Flow</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-01T10:18:32+08:00" pubdate data-updated="true">May 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2 id="section">代码分支</h2>
+
+<p>之前在阿里，公司内部采用SVN作为代码管理工具。自从创业后，我一直在使用GIT作为代码管理工具。</p>
+
+<p>项目常驻分支:</p>
+
+<ul>
+  <li>master</li>
+  <li>pre</li>
+  <li>devel</li>
+  <li>local</li>
+</ul>
+
+<p>分支状态:</p>
+
+<ul>
+  <li>冻结状态：不允许代码提交</li>
+  <li>活跃状态：允许代码提交</li>
+</ul>
+
+<h3 id="master">master</h3>
+
+<p>git仓库新建，通过<code>git clone</code>被clone到本地后，会默认有一个master分支，我们称之为主干分支。主干分支要保存和生产环境一致的代码。该分支在生产环境发布之后，就处于<code>冻结状态</code>。</p>
+
+<h3 id="pre">pre</h3>
+
+<p>每次发布之前，将测试好的devel代码合并到pre分支，再通过部署pre分支代码提交预发布测试。pre分支保存和预发布环境一致的代码。该分支在预发布环境发布之后，就处于<code>冻结状态</code>。</p>
+
+<h3 id="devel">devel</h3>
+
+<p>devel分支保存开发人员自测完毕之后的代码。该分支一直是<code>活跃状态</code>，并且一直允许提交的。</p>
+
+<h3 id="local">local</h3>
+
+<p>local是一个<code>本地分支</code>，不允许push到远端。每个开发人员各自有一个属于自己的local分支，工程师自己的新开发需求都在该分支完成。但开发并且自测完毕后，允许提交到devel，再由devel推送到远端。该分支一直是<code>活跃状态</code>，并且一直允许提交的。</p>
+
+<h3 id="section-1">流程图</h3>
+
+<p>local和devel开发过程中，分支合并及提交规则如下：</p>
+
+<p><img src="/images/posts/develop_work_flow.png" alt="开发流程管理" title="流程图" /></p>
+
+<h2 id="section-2">环境</h2>
+
+<p>项目代码运行环境:</p>
+
+<ul>
+  <li>生产环境：部署master分支</li>
+  <li>预发布环境：部署pre分支</li>
+  <li>测试环境：部署devel分支</li>
+  <li>开发环境：开发工程师每人有一个，部署local分支</li>
+</ul>
+
+<h2 id="section-3">部署流程</h2>
+
+<h3 id="section-4">部署测试环境</h3>
+
+<p>我的几个项目组采用敏捷开发，backlog管理需求，通过sprint控制发布节奏，每两周发布一个可用版本。所以在每个发布点的前两到三天，我们会提交测试。</p>
+
+<ul>
+  <li>平时
+    <ul>
+      <li>开发人员local分支自测</li>
+      <li>合并到devel分支</li>
+    </ul>
+  </li>
+  <li>提测点(发布点前两到三天)
+    <ul>
+      <li>部署devel分支到测试环境</li>
+      <li>提交测试工程师测试</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section-5">部署预发布环境</h3>
+
+<ul>
+  <li>devel分支提测
+    <ul>
+      <li>测试人员在devel分支提测成功后，由PM负责将devel合并到pre分支，并且部署预发布环境，提交预发布测试。</li>
+    </ul>
+  </li>
+  <li>hotfix提测
+    <ul>
+      <li>当生产环境发现一个bug，需要立即修复，则启动hotfix流程：
+        <ul>
+          <li>先在pre上修复代码，并自测</li>
+          <li>自测成功后，merge到devel分支，提交测试环境测试</li>
+          <li>测试环境测试成功后，push到pre远端，提交预发布环境测试</li>
+          <li>预发布环境测试成功后，merge到master分支，准备上生产环境测试</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section-6">部署生产环境</h3>
+
+<p>当预发布环境测试通过，测试人员通知PM发布生产环境。此时PM需要做以下事情:</p>
+
+<ul>
+  <li>给测试通过的pre分支打tag，格式如下:<code>v1.0.0</code>
+    <ul>
+      <li>每经历一次hotfix发布，小版本号加一</li>
+      <li>每经历一次小产品改动发布，次版本号加一</li>
+      <li>产品大改版，主版本号加一</li>
+    </ul>
+  </li>
+  <li>合并pre分支到master</li>
+  <li>如果是hotfix，合并pre分支到devel</li>
+  <li>推送代码和tag到远端</li>
+  <li>部署生产环境</li>
+  <li>提交生产环境测试</li>
+  <li>生产环境测试通过后，通知项目组此次发布成功</li>
+</ul>
+
+<h3 id="section-7">流程图</h3>
+
+<p>devel分支提测及hotfix提测流程，以及产品发布流程如下：</p>
+
+<p><img src="/images/posts/devel_and_hotfix_submit_test_work_flow.png" alt="开发流程管理" title="流程图" /></p>
+</div>
+
+
+</article>
+
+
+        <div class="sharing">
+  
+  
+  
+    
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1380332723283758&move=0&amp;btn=r2.gif" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+    
+</div>
+
+
+
+
+    			</div>
+    			<footer id="footer">
+    				<p class="credit">
+  Copyright &copy; 2014 - CuiZzz.... Powered by <a href="http://octopress.org">Octopress</a>
+</p>
+
+
+    			</footer>
+    			
+
+
+
+
+
+
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+
+
+
+
+    		</div>
+    	</section>
+  	</div>
+</body>
+</html>
