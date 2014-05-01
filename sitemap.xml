@@ -19,16 +19,22 @@
         <lastmod>2014-05-01T11:07:51+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://charlescui.github.io/blog/2014/05/02/long-pull-with-external-io-request-and-callback/
+        </loc>
+        <lastmod>2014-05-02T00:39:16+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://charlescui.github.io/404.html</loc>
         <lastmod>2014-02-22T00:26:44+08:00</lastmod>
     </url>
     <url>
         <loc>http://charlescui.github.io/archives/</loc>
-        <lastmod>2014-05-01T11:13:30+08:00</lastmod>
+        <lastmod>2014-05-02T00:39:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://charlescui.github.io/blog/archives/</loc>
-        <lastmod>2014-05-01T11:13:30+08:00</lastmod>
+        <lastmod>2014-05-02T00:39:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://charlescui.github.io/blog/categories/</loc>
@@ -36,7 +42,7 @@
     </url>
     <url>
         <loc>http://charlescui.github.io/</loc>
-        <lastmod>2014-05-01T11:13:30+08:00</lastmod>
+        <lastmod>2014-05-02T00:39:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://charlescui.github.io/robots.txt</loc>
