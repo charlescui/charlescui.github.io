@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 项目 | 非宁静无以睡眠啊]]></title>
   <link href="http://charlescui.github.io/blog/categories/xiang-mu/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
-  <updated>2014-05-02T00:39:16+08:00</updated>
+  <updated>2014-05-25T10:46:12+08:00</updated>
   <id>http://charlescui.github.io/</id>
   <author>
     <name><![CDATA[CuiZzz...]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-05-01T08:53:59+08:00</updated>
     <id>http://charlescui.github.io/blog/2014/05/01/deploy-hls-m3u8-server-with-ffmpeg</id>
     <content type="html"><![CDATA[<p>这是一次搭建<code>直播</code>HLS服务器的经历，通过以下介绍，可以完成一套完整的直播HLS服务的部署。</p>
+
+<!--more-->
 
 <h2 id="ffmpeg">安装ffmpeg</h2>
 

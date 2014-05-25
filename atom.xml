@@ -4,7 +4,7 @@
   <title><![CDATA[非宁静无以睡眠啊]]></title>
   <link href="http://charlescui.github.io/atom.xml" rel="self"/>
   <link href="http://charlescui.github.io/"/>
-  <updated>2014-05-02T00:39:16+08:00</updated>
+  <updated>2014-05-25T10:46:12+08:00</updated>
   <id>http://charlescui.github.io/</id>
   <author>
     <name><![CDATA[CuiZzz...]]></name>
@@ -27,6 +27,8 @@
   <li>可靠性高，http断开后也不影响后续的请求结果获取</li>
   <li>高性能，客户端不需要轮询太频繁，这会让客户端消耗太多资源</li>
 </ul>
+
+<!--more-->
 
 <h2 id="section-1">现实场景</h2>
 
@@ -113,6 +115,8 @@
     <content type="html"><![CDATA[<h2 id="section">代码分支</h2>
 
 <p>之前在阿里，公司内部采用SVN作为代码管理工具。自从创业后，我一直在使用GIT作为代码管理工具。</p>
+
+<!--more-->
 
 <p>项目常驻分支:</p>
 
@@ -240,6 +244,8 @@
     <updated>2014-05-01T08:53:59+08:00</updated>
     <id>http://charlescui.github.io/blog/2014/05/01/deploy-hls-m3u8-server-with-ffmpeg</id>
     <content type="html"><![CDATA[<p>这是一次搭建<code>直播</code>HLS服务器的经历，通过以下介绍，可以完成一套完整的直播HLS服务的部署。</p>
+
+<!--more-->
 
 <h2 id="ffmpeg">安装ffmpeg</h2>
 
