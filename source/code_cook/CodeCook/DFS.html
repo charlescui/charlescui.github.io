@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: CodeCook::DFS
+  
+    &mdash; Documentation by YARD 0.8.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (D)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../CodeCook.html" title="CodeCook (module)">CodeCook</a></span></span>
+     &raquo; 
+    <span class="title">DFS</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: CodeCook::DFS
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">CodeCook::DFS</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">手写代码必备手册(Ruby版).rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>graph = DFS::Graph.new(10) graph.add_edge(0, 1) graph.add_edge(0, 2)
+graph.add_edge(0, 3) graph.add_edge(1, 0) graph.add_edge(2, 4)
+graph.add_edge(2, 5) graph.add_edge(8, 9) dfs = DFS.new(graph, 0)
+dfs.path_to(1)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="DFS/Graph.html" title="CodeCook::DFS::Graph (class)">Graph</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (DFS) <strong>initialize</strong>(graph, source) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of DFS.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#path_to-instance_method" title="#path_to (instance method)">- (Object) <strong>path_to</strong>(v) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="CodeCook::DFS (class)">DFS</a></span></tt>) <strong>initialize</strong>(graph, source) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of DFS</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+505
+506
+507
+508
+509
+510
+511</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 505</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_graph'>graph</span><span class='comma'>,</span> <span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span>
+    <span class='ivar'>@graph</span> <span class='op'>=</span> <span class='id identifier rubyid_graph'>graph</span>
+    <span class='ivar'>@source</span> <span class='op'>=</span> <span class='id identifier rubyid_source'>source</span>
+    <span class='ivar'>@edge_to</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_graph'>graph</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+    <span class='ivar'>@visited</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_graph'>graph</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="path_to-instance_method">
+  
+    - (<tt>Object</tt>) <strong>path_to</strong>(v) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 513</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_path_to'>path_to</span><span class='lparen'>(</span><span class='id identifier rubyid_v'>v</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@visited</span><span class='lbracket'>[</span><span class='id identifier rubyid_v'>v</span><span class='rbracket'>]</span>
+
+    <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_w'>w</span> <span class='op'>=</span> <span class='id identifier rubyid_v'>v</span>
+    <span class='kw'>while</span> <span class='id identifier rubyid_w'>w</span> <span class='op'>!=</span> <span class='ivar'>@source</span>
+        <span class='id identifier rubyid_path'>path</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='id identifier rubyid_w'>w</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_w'>w</span> <span class='op'>=</span> <span class='ivar'>@edge_to</span><span class='lbracket'>[</span><span class='id identifier rubyid_w'>w</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_path'>path</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='ivar'>@source</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_path'>path</span><span class='period'>.</span><span class='id identifier rubyid_reverse'>reverse</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jun 27 16:27:45 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

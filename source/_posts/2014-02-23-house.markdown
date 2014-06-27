@@ -1,0 +1,36 @@
+---
+layout: post
+title: "三分地的花园洋房"
+date: 2014-02-23 13:52:11 +0800
+comments: true
+categories: 
+---
+
+![鸟瞰图](/images/posts/bigbang.png "花园洋房")
+
+看过《绿野仙踪》的孩子有着森林的梦，那里有花草树木，有飞鸟鱼虫。如果能给我一点点绿地，任我发挥，我想造这样的大房子，这是我的中国梦。
+<!--more-->
+
+### 楼层介绍
+
+##### 一楼
+
+![一楼](/images/posts/bigbang_1f.png "一楼俯视图")
+
+- 客厅宽敞，朝南两扇大窗户。一个卧室给不方便上下楼的长辈居住。
+
+##### 二楼
+
+![二楼](/images/posts/bigbang_2f.png "二楼俯视图")
+
+- 书房有三扇窗户，宽敞通透。但卫生间设计的不好，只有一个卧室有，其他卧室要上卫生间就麻烦了。
+
+##### 三楼
+
+![三楼](/images/posts/bigbang_3f.png "三楼俯视图")
+
+- 三楼一个宽敞的大露台，可以乘凉，可以眺望远方，和一楼的大露台交相辉映，看着就心里宽敞。
+
+`捞3D渲染机制有问题，本来设计的是三层的楼，但只显示了一层`
+
+<iframe src="http://www.lao3d.com/model_link.html?modelid=9997" allowfullscreen="true" width="600" height="450"></iframe>

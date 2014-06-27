@@ -5,17 +5,16 @@
 .highlight .line-numbers, html .gist .gist-file .gist-syntax .highlight .line_numbers {
   text-align: right;
   font-size: 13px;
+  font-weight: 100;
   line-height: 1.45em;
   @if $solarized == light {
-    background: lighten($base03, 1) $noise-bg !important;
-    border-right: 1px solid darken($base02, 2) !important;
+    background: $code-bg !important;
+    border-right: 1px solid 1px solid $code-bg !important;
     @include box-shadow(lighten($base03, 2) -1px 0 inset);
-    text-shadow: lighten($base02, 2) 0 -1px;
   } @else {
-    background: $base02 $noise-bg !important;
-    border-right: 1px solid darken($base03, 2) !important;
+    background: $code-bg !important;
+    border-right: 1px solid 1px solid $code-bg!important;
     @include box-shadow(lighten($base02, 2) -1px 0 inset);
-    text-shadow: darken($base02, 10) 0 -1px;
   }
   span { color: $base01 !important; }
   padding: .8em !important;
@@ -55,11 +54,11 @@ html .gist .gist-file {
    color: $base01;
    font-size: .7em !important;
    @if $solarized == light {
-     background: lighten($base03, 2) $noise-bg;
-     border: 1px solid $pre-border !important;
+     background: lighten($base03, 2);
+     border: 1px solid $code-bg !important;
      border-top: 1px solid lighten($base03, 2) !important;
    } @else {
-     background: $base02 $noise-bg;
+     background: $base02 ;
    }
    @extend .sans;
    line-height: 1.5em;
@@ -72,7 +71,6 @@ html .gist .gist-file {
       position: absolute; top: 0; left:0; right:-10px;
       color: #474747 !important;
       @extend .code-title;
-      &:hover { color: $link-color !important; }
     }
     a[href*=raw]{
       @extend .download-source;
@@ -81,10 +79,9 @@ html .gist .gist-file {
   }
 }
 pre {
-  background: $pre-bg $noise-bg;
   @include border-radius(.4em);
   @extend .mono;
-  border: 1px solid $pre-border;
+  // border: 1px solid $pre-border;
   line-height: 1.45em;
   font-size: 13px;
   margin-bottom: 2.1em;
@@ -122,7 +119,7 @@ p, li {
   padding: .8em;
   overflow-x: auto;
   line-height: 1.45em;
-  background: $base03 $noise-bg !important;
+  background: $white;
   color: $base1 !important;
   span { color: $base1 !important; }
   span { font-style: normal !important; font-weight: normal !important; }
@@ -196,7 +193,6 @@ p, li {
 .highlight, .gist-highlight {
   pre { background: none; @include border-radius(0px); border: none; padding: 0; margin-bottom: 0; }
   margin-bottom: 1.8em;
-  background: $base03;
   overflow-y: hidden;
   overflow-x: auto;
 }
@@ -214,8 +210,9 @@ pre, .highlight, .gist-highlight {
 }
 
 .highlight code { 
-  @extend .pre-code; background: #000;
+  @extend .pre-code; 
 }
+
 figure.code {
   background: none;
   padding: 0;
@@ -241,9 +238,7 @@ figure.code {
   font-weight: normal;
   margin-bottom: 0;
   @include border-top-radius(5px);
-  font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
   background: #aaaaaa image-url("code_bg.png") top repeat-x;
-  border: 1px solid #565656;
   border-top-color: #cbcbcb;
   border-left-color: #a5a5a5;
   border-right-color: #a5a5a5;

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "室内模型设计初笔"
+date: 2014-02-23 02:43:46 +0800
+comments: true
+categories: 
+---
+
+![鸟瞰图](/images/posts/xxwz.png "大平层")
+
+城区内现在的房子偏爱豪装+大平层，200-300平方左右的平层，配上单价6000RMB上下的精装修，便可挽回部分向往郊区排屋、独栋的业主的心。
+<!--more-->
+不过，据我媳妇说，还是有大楼梯上下层打通的房子才更气派，那种站在楼梯下，婚纱的裙摆霸气的铺开，那种感觉是平层的心永远无法理解的。
+
+话说回来，最近有部电影很火：[<<来自星星的你>>](www.letv.com/ptv/vplay/2234163.html)，里面男女主人公的大豪宅掀起了不少少妇的豪宅梦。
+
+<iframe src="http://www.lao3d.com/model_link.html?modelid=9992" allowfullscreen="true" width="600" height="450"></iframe>

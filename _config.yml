@@ -6,8 +6,8 @@ url: http://charlescui.github.io
 title: "非宁静无以睡眠啊"
 subtitle: "我喜欢这么玩，那么玩，就是没有你好玩"
 author: CuiZzz...
-simple_search: http://google.com/search
-description:
+simple_search: http://www.google.com.hk/webhp
+description: "我喜欢这么玩，那么玩，就是没有你好玩"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions:
     - autolink
@@ -50,7 +50,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [custom/asides/about.html, asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -63,14 +63,14 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user: charlescui.github.io
+github_user: charlescui
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -98,3 +98,17 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Gravatar
+gravatar_email: zheng.cuizh@gmail.com
+
+# JiaThis
+jiathis: true
+
+excerpt_link: "阅读全文" # 用于提示阅读完整文章的文字链接
+
+# Baidu Analytics
+baidu_analytics_tracking_id: 'ae7f21e3ff60baae88a23fcda30e6a14'
+
+# Linkedin
+linkedin_user: "cuizheng"
