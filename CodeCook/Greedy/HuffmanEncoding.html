@@ -1,0 +1,865 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: CodeCook::Greedy::HuffmanEncoding
+  
+    &mdash; Documentation by YARD 0.8.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (H)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../CodeCook.html" title="CodeCook (module)">CodeCook</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Greedy.html" title="CodeCook::Greedy (module)">Greedy</a></span></span>
+     &raquo; 
+    <span class="title">HuffmanEncoding</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: CodeCook::Greedy::HuffmanEncoding
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">CodeCook::Greedy::HuffmanEncoding</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">手写代码必备手册(Ruby版).rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>12.2 霍夫曼编码</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">&#39;huffman.rb&#39;</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-identifier">encoding</span> = <span class="ruby-string">&quot;Hello Huff&quot;</span>.<span class="ruby-identifier">huffman</span>
+<span class="ruby-identifier">输出</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1101010000100010110011111111</span>
+
+<span class="ruby-identifier">encoding</span>.<span class="ruby-identifier">lookup</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">code</span>, <span class="ruby-identifier">char</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{code} : #{char}&quot;</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">输出</span> =<span class="ruby-operator">&gt;</span>
+<span class="ruby-value">00</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">l</span> <span class="ruby-value">010</span> <span class="ruby-operator">:</span>
+<span class="ruby-value">110</span> <span class="ruby-operator">:</span> <span class="ruby-constant">H</span> <span class="ruby-value">011</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">u</span> <span class="ruby-value">111</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">f</span> <span class="ruby-value">100</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">o</span> <span class="ruby-value">101</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">e</span>
+</pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#input-instance_method" title="#input (instance method)">- (Object) <strong>input</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute input.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lookup-instance_method" title="#lookup (instance method)">- (Object) <strong>lookup</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute lookup.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#output-instance_method" title="#output (instance method)">- (Object) <strong>output</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute output.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#root-instance_method" title="#root (instance method)">- (Object) <strong>root</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute root.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#%5B%5D-instance_method" title="#[] (instance method)">- (Object) <strong>[]</strong>(char) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#decode-instance_method" title="#decode (instance method)">- (Object) <strong>decode</strong>(code) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#decode_string-instance_method" title="#decode_string (instance method)">- (Object) <strong>decode_string</strong>(code) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#encode-instance_method" title="#encode (instance method)">- (Object) <strong>encode</strong>(char) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#encode_string-instance_method" title="#encode_string (instance method)">- (Object) <strong>encode_string</strong>(string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (HuffmanEncoding) <strong>initialize</strong>(input) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of HuffmanEncoding.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">- (Object) <strong>to_s</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="CodeCook::Greedy::HuffmanEncoding (class)">HuffmanEncoding</a></span></tt>) <strong>initialize</strong>(input) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of HuffmanEncoding</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+628
+629
+630
+631
+632</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 628</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_input'>input</span><span class='rparen'>)</span>
+    <span class='ivar'>@input</span> <span class='op'>=</span> <span class='id identifier rubyid_input'>input</span>
+    <span class='ivar'>@root</span> <span class='op'>=</span> <span class='const'>NodeQueue</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_input'>input</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_huffman_root'>huffman_root</span>
+    <span class='ivar'>@output</span> <span class='op'>=</span> <span class='id identifier rubyid_encode_string'>encode_string</span><span class='lparen'>(</span><span class='id identifier rubyid_input'>input</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="input=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="input-instance_method">
+  
+    - (<tt>Object</tt>) <strong>input</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute input</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+626
+627
+628</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 626</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_input'>input</span>
+  <span class='ivar'>@input</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="lookup=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="lookup-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lookup</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute lookup</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+626
+627
+628</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 626</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_lookup'>lookup</span>
+  <span class='ivar'>@lookup</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="output=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="output-instance_method">
+  
+    - (<tt>Object</tt>) <strong>output</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute output</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+626
+627
+628</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 626</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_output'>output</span>
+  <span class='ivar'>@output</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="root=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="root-instance_method">
+  
+    - (<tt>Object</tt>) <strong>root</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute root</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+626
+627
+628</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 626</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_root'>root</span>
+  <span class='ivar'>@root</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="[]-instance_method">
+  
+    - (<tt>Object</tt>) <strong>[]</strong>(char) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+677
+678
+679</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 677</span>
+
+<span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id identifier rubyid_char'>char</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='id identifier rubyid_char'>char</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="decode-instance_method">
+  
+    - (<tt>Object</tt>) <strong>decode</strong>(code) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+647
+648
+649</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 647</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_decode'>decode</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='rparen'>)</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_lookup'>lookup</span><span class='lbracket'>[</span><span class='id identifier rubyid_code'>code</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="decode_string-instance_method">
+  
+    - (<tt>Object</tt>) <strong>decode_string</strong>(code) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 659</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_decode_string'>decode_string</span><span class='lparen'>(</span><span class='id identifier rubyid_code'>code</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_code'>code</span> <span class='op'>=</span> <span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+    <span class='id identifier rubyid_string'>string</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_subcode'>subcode</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_code'>code</span><span class='period'>.</span><span class='id identifier rubyid_each_char'>each_char</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_bit'>bit</span><span class='op'>|</span>
+        <span class='id identifier rubyid_subcode'>subcode</span> <span class='op'>+=</span> <span class='id identifier rubyid_bit'>bit</span>
+        <span class='kw'>unless</span> <span class='id identifier rubyid_decode'>decode</span><span class='lparen'>(</span><span class='id identifier rubyid_subcode'>subcode</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+            <span class='id identifier rubyid_string'>string</span> <span class='op'>+=</span> <span class='id identifier rubyid_decode'>decode</span><span class='lparen'>(</span><span class='id identifier rubyid_subcode'>subcode</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_subcode'>subcode</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_string'>string</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="encode-instance_method">
+  
+    - (<tt>Object</tt>) <strong>encode</strong>(char) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+643
+644
+645</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 643</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='id identifier rubyid_char'>char</span><span class='rparen'>)</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_lookup'>lookup</span><span class='period'>.</span><span class='id identifier rubyid_invert'>invert</span><span class='lbracket'>[</span><span class='id identifier rubyid_char'>char</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="encode_string-instance_method">
+  
+    - (<tt>Object</tt>) <strong>encode_string</strong>(string) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+651
+652
+653
+654
+655
+656
+657</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 651</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_encode_string'>encode_string</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_code'>code</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_string'>string</span><span class='period'>.</span><span class='id identifier rubyid_each_char'>each_char</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span>
+        <span class='id identifier rubyid_code'>code</span> <span class='op'>+=</span> <span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='id identifier rubyid_c'>c</span><span class='rparen'>)</span> 
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_code'>code</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_s</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+673
+674
+675</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '手写代码必备手册(Ruby版).rb', line 673</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+    <span class='ivar'>@output</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Jun 27 18:38:10 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
